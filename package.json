@@ -1,0 +1,18 @@
+{
+  "name": "agency-location",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.95.6",
+    "mysql2": "^2.2.5",
+    "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "geonames": "./geonames/geonames.sh",
+    "match": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
+}
