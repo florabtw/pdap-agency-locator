@@ -53,11 +53,19 @@ Dolthub database here: https://www.dolthub.com/repositories/pdap/datasets
 ### Step 3: Match Agencies to Geonames
 
 Once you have the local database running, and geonames sqlite db file, we can
-run our `index.js` file which will match agencies to geonames, *one state at a
-time*:
+run our `index.js` file which will match agencies to geonames, by state or by
+region:
+
+**By region**:
 
 ```
-$ yarn match CA # or whichever state you want to use, e.g. AL, AK, ...
+$ yarn match west # accepted values: midwest, northeast, south, west
+```
+
+**By state**:
+
+```
+$ yarn match CA # accepts any state iso code
 ```
 
 All done! This will update your database. All you need to do is commit to
